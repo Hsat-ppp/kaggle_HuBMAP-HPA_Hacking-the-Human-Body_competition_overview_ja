@@ -29,6 +29,7 @@ The mask representing the segmentation region is given as a binary value (0 or 1
 留意点として，データセットが2つの異なるコンソーシアム（HPA, HuBMAP）から提供されている．<br>
 It is important to note that the datasets are provided by two different consortia (HPA, HuBMAP).<br>
 <b>訓練データはHPA公開データのみからなる．一方，publicテストデータはHPA非公開データ＋HuBMAPデータの組み合わせから，privateテストデータはHuBMAPデータのみからなる．</b><br>
+The training data consists of only HPA public data. On the other hand, public test data consists of a combination of HPA private data and HuBMAP data, and private test data consists of HuBMAP data only.<br>
 この「属性の異なる2つのデータセット」は公式からも中心的課題の1つであると提示されている("Adapting models to function properly when presented with data that was prepared using a different protocol will be one of the core challenges of this competition.")．<br>
 実際のところ，このことはモデル構築と汎化に際してどこまで問題となるのだろうか？<br>
 In practice, to what extent is this a problem in model construction and generalization?<br><br>
