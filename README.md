@@ -1,6 +1,7 @@
 # kaggle_HuBMAP-HPA_Hacking-the-Human-Body_competition_overview_ja
 Kaggle competition overview for "HuBMAP + HPA - Hacking the Human Body." <br>
 Competition page: https://www.kaggle.com/competitions/hubmap-organ-segmentation/overview/description <br>
+This page is published in kaggle forum: https://www.kaggle.com/competitions/hubmap-organ-segmentation/discussion/347404 <br>
 
 ## Understanding competition
 [Competition description page here](https://www.kaggle.com/competitions/hubmap-organ-segmentation/overview/description) <br>
