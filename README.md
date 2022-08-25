@@ -39,10 +39,10 @@ In practice, to what extent is this a problem in model construction and generali
 テーブルデータ．画像と寸法に関するデータに加え，正解マスクのrun-length符号，age，sex（後ろ3つはtrain.csvのみ）が与えられている．<br>
 最初の列に画像idが与えられているため，後述の画像ファイルと符合して学習／推論をすることになるだろう．<br>
 - [train/test]_images/ <br>
-画像ファイル．<b>HPAとHuBMAPとで画像のピクセル数とサンプル染色方法が異なるらしい．</b> ("HPA samples were stained with antibodies visualized with 3,3'-diaminobenzidine (DAB) and counterstained with hematoxylin. HuBMAP images were prepared using Periodic acid-Schiff (PAS)/hematoxylin and eosin (H&E) stains. All images used have at least one FTU.")染色については門外漢だが，色の具合が違ったり，着色箇所に「クセ」や偏りがあったりするのだろうか？<br>
+画像ファイル．<b>HPAとHuBMAPとで画像のピクセル数やサンプル染色方法が異なるらしい．</b> ("HPA samples were stained with antibodies visualized with 3,3'-diaminobenzidine (DAB) and counterstained with hematoxylin. HuBMAP images were prepared using Periodic acid-Schiff (PAS)/hematoxylin and eosin (H&E) stains. All images used have at least one FTU.")（HPAデータ内でもわずかにバリエーションがあるが）染色については門外漢だが，色の具合が違ったり，着色箇所に「クセ」や偏りがあったりするのだろうか？<br>
 画像の前処理を上手くやる必要がありそう．<br>
 また，全ての画像に少なくとも1つのFTU（segmentation対象）が存在する．「FTUが1つもない」という状況は想定しなくて良いだろう．<br>
-The number of pixels in the image and the sample staining method are different between PA and HuBMAP ("HPA samples were stained with antibodies visualized with 3,3'-diaminobenzidine (DAB) and counterstained with hematoxylin. HuBMAP images were prepared using Periodic acid-Schiff (PAS)/hematoxylin and eosin (H&E) stains. All images used have at least one FTU."). I am not an expert on staining, but I wonder if there are differences in coloration, or if there are "quirks" or biases in the stained areas.<br>
+The number of pixels in the image and the sample staining method are different between PA and HuBMAP ("HPA samples were stained with antibodies visualized with 3,3'-diaminobenzidine (DAB) and counterstained with hematoxylin. HuBMAP images were prepared using Periodic acid-Schiff (PAS)/hematoxylin and eosin (H&E) stains. All images used have at least one FTU.")(There are, however, slight variations within the HPA data). I am not an expert on staining, but I wonder if there are differences in coloration, or if there are "quirks" or biases in the stained areas.<br>
 I think image preprocessing needs to be done well.<br>
 There is at least one FTU (segmentation target) in every image. There is no need to assume the situation where there is no FTU.<br>
 - train_annotations <br>
